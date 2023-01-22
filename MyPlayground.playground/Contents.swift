@@ -61,3 +61,27 @@ var alan = Room.metre2(sizeA: 2, sizeB: 3)
 print(alan)
 print(Room.sizeC)
 // it looks an advantage but it can affect the performance- you shouldnt use more than normally
+ 
+
+//Enumeration -> you can create a new object whatever type you want
+
+
+enum ColoursClass {
+    
+    case White
+    
+    case Black
+    
+    
+    
+}
+var color = ColoursClass.White
+switch color  {
+    
+case .White: // if it has a dot in front, it is definitely an enum
+    print("#FFFFFF")
+    
+
+case .Black:
+    print("000000")
+}
