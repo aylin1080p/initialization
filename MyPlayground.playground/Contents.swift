@@ -40,3 +40,24 @@ func takeInfo(somebody:Person){ //this method excepts an object of the Person Cl
 
 
 takeInfo(somebody: human)
+
+
+
+// You don't have to generate an object from the class to access static functions. You can use it like this -> class.staticFunctionName
+class Room{
+    var sizeA:Int?
+    var sizeB:Int?
+    static let sizeC = 12
+    static func metre2(sizeA:Int,sizeB:Int)->Int{
+        var square = sizeA*sizeB
+        return square
+    }
+    
+    
+}
+
+var alan = Room.metre2(sizeA: 2, sizeB: 3)
+//called this function without any object
+print(alan)
+print(Room.sizeC)
+// it looks an advantage but it can affect the performance- you shouldnt use more than normally
